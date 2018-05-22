@@ -1,0 +1,19 @@
+<ActionBar title="Treinando Inglês" class="action-bar"></ActionBar>
+
+<scrollView class="page">
+    <GridLayout rows="*, auto, auto, *, auto" columns="*, auto" margin="100px;">
+
+        <Progress row="0" col="0" [value]="progressValue" maxValue="100" class="d-flex justify-content-end"></Progress>
+
+        <FlexboxLayout row="0" col="1" width="150" height="150" class="d-flex justify-content-end">
+            <Label *ngFor="let coracao of coracoes" [text]="coracao.exibrCoracao()" class="fa" width="50" height="50"></Label>
+        </FlexboxLayout>
+
+        <label row="1" colSpan="2" text="Traduza a Frase:" class="h2"></label>
+        <label row="2" colSpan="2" [text]="rodadaPergunta.perguntaEng" class="h3"></label>
+
+        <textField row="3" colSpan="2" class="input-field" textWrap="true" [(ngModel)]="resposta" ></textField>
+        
+        <button row="4" col="1" text="Verificar" class="btn btn-primary" (tap)="verificarResposta()"></button>
+    </GridLayout>
+</scrollView>

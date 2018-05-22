@@ -1,0 +1,18 @@
+<ActionBar title="Temas" class="action-bar">
+    <ActionItem text="Sobre" ios.position="right" nsRouterLink="/sobre" android.position="popup"></ActionItem>
+</ActionBar>
+
+
+<GridLayout columns="*, auto" rows="*" class="page">
+    <ListView [items]="temas" colSpan="2" col="0" class="list-group">     
+        <ng-template let-item="item"> 
+            <Label [text]='item.nome' [nsRouterLink]="['/tema', item.id]" class="list-group-item"></Label>
+        </ng-template>
+    </ListView>
+    
+    <button text="Novo" col="1" nsRouterLink="/tema" class="btn btn-primary"></button>
+</GridLayout>
+
+
+
+

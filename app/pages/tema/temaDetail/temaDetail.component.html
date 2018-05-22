@@ -1,0 +1,13 @@
+<ActionBar [title]="tema.nome" class="action-bar">
+        <ActionItem text="Excluir" ios.position="right" android.position="popup" (tap)="removerTema()"></ActionItem>
+</ActionBar>
+
+
+<GridLayout rows="*, auto" class="page">
+        
+    <ScrollView row="0">
+        <label textWrap="true" class="text-left m-10" [text]="tema.descricao"></label>
+    </ScrollView>
+        
+    <button text="Treinar" row="1" class="btn btn-primary" (tap)="treinar()"></button>
+</GridLayout>

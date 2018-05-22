@@ -1,0 +1,43 @@
+<ActionBar title="Novo Tema" class="action-bar"></ActionBar>
+
+<ScrollView>
+    <StackLayout class="page">
+        <StackLayout class="form">
+            <StackLayout class="input-field">
+                <label text="Nome do Tema" class="label fonr-weight-bold m-10"></label>
+                <TextField class="input" [(ngModel)]="tema.nome"></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+            <StackLayout class="input-field" keyboardType="datetime">
+                <label text="Descrição" class="label fonr-weight-bold m-10"></label>
+                <TextView class="input" textWrap="true" [(ngModel)]="tema.descricao"></TextView>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+            <StackLayout>
+                <GridLayout rows="auto, *">
+                    <GridLayout row="0" rows="auto, auto, auto" columns="*, auto" class="input-field">
+                        <label row="0" colSpan="2" text="Perguntas"></label>
+                        <textField row="1" col="0" hint="Digite a frase em ingles..." [(ngModel)]="pergunta.perguntaEng"></textField>
+                        <textField row="2" col="0" hint="Digite a tradução da frase..." [(ngModel)]="pergunta.perguntaPtBr"></textField>
+                        <label row="2"  col="1" colSpan="2" [text]="icons.get('add')" class="fa" (tap)="createPergunta()" id="icon"></label>
+                    </GridLayout>
+
+                    <ListView row="1" [items]="perguntas" class="list-group m-t-10" height="500px" width="800px">     
+                        <ng-template let-item="item"> 
+                            <GridLayout class="list-group-item" rows="auto, auto" columns="*, auto">
+                                <label row="0" col="0" [text]="item.perguntaEng" class="list-group-item-text h3"></label>
+                                <label row="1" col="0" [text]="item.perguntaPtBr" class="list-group-item-text h6"></label>
+                                <label row="1" rowSpan="2" col="1" [text]="icons.get('trash')" class="fa" (tap)="deletePergunta(item)"></label>
+                            </GridLayout>
+                        </ng-template>
+                    </ListView>
+                </GridLayout>
+            </StackLayout>
+            
+            <button text="Criar Tema" class="btn btn-primary" (tap)="createTema()"></button>
+
+        </StackLayout>
+    </StackLayout>
+</ScrollView>

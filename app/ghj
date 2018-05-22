@@ -1,0 +1,1 @@
+tns build android --release --key-store-path ../chaves_android/learningEnglish.keystore --key-store-password 33618702 --key-store-alias learningEnglish --key-store-alias-password 33618702 --copy-to ../learningEnglish.apk

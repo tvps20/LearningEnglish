@@ -1,0 +1,15 @@
+<ActionBar title="Learning English" class="action-bar"></ActionBar>
+
+<scrollView>
+    <stackLayout class="page text-center m-t-30">
+
+        <image src="~/images/aprender.png"></image>
+
+        <label text="Bem vindo" class="h2 m-t-30"></label>
+        <label text="Vamos aprender um pouco de ingês?" class="h3"></label>
+
+        <button class="btn btn-primary" text="Começar" nsRouterLink="/home"></button>
+        <button class="btn btn-outline" text="Sair" (tap)="fecharApp()"></button>
+
+    </stackLayout>
+</scrollView>
