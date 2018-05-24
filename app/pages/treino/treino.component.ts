@@ -12,7 +12,7 @@ import { Coracao } from '../../shared/coracao.model'
     selector: 'treino',
     moduleId: module.id,
     templateUrl: './treino.component.html',
-    styleUrls: ['./treino.component.css']
+    styleUrls: []
 })
 
 export class TreinoComponent implements OnInit{

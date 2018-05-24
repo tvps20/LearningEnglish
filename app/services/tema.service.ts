@@ -33,7 +33,7 @@ export class TemaService {
     }
 
     private loadTemas(){
-        this.temas = [ { id:1, nome: "Verbo To Be", perguntas: [{ id: 1, perguntaEng: "How are you?", perguntaPtBr: "Como vai você?"},
+        this.temas = [ { id:1, nome: "Verbo To Be", perguntas: [{ id: 1, perguntaEng: "How are you?", perguntaPtBr: "Como você esta?"},
                                                                 { id: 2, perguntaEng: "He is cool", perguntaPtBr: "Ele é legal"},
                                                                 { id: 3, perguntaEng: "She is fast", perguntaPtBr: "Ela é rápida"},
                                                                 { id: 4, perguntaEng: "We are young", perguntaPtBr: "Nós somos jovens"}], 
