@@ -47,7 +47,7 @@ export class TreinoComponent implements OnInit{
 
     public verificarResposta() {
 
-        if(this.rodadaPergunta.perguntaPtBr == this.resposta){
+        if(this.rodadaPergunta.perguntaPtBr === this.resposta){
             
             // Tranco a pergunta da rodada
             this.rodada++;
@@ -72,9 +72,10 @@ export class TreinoComponent implements OnInit{
             this.tentativas--;
             
             if(this.tentativas === -1){
-                alert("Você perdeu todas as tentativas, tente treinar novamente.");
+                alert("A respota correta seria: " + this.rodadaPergunta.perguntaPtBr + "\nNão foi dessa vez, tenta de novo. :)");
                 this.navigation.backToPreviousPage();
             }else if(this.tentativas !== this.coracoes.length){
+                alert("Você errou :( \nA resposta correta seria: " + this.rodadaPergunta.perguntaPtBr);
                 let indice = this.coracoes.length - this.tentativas;
 
                 this.coracoes[indice -1].cheio = false; 
