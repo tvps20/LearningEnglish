@@ -4,7 +4,8 @@
 ### Centro de Ciências e Tecnologia – CCT  
 ### Departamento de computação  
 
-**Ficha Técnica – Objeto de Aprendizagem**
+
+# **Ficha Técnica – Objeto de Aprendizagem**
 
  **Titulo:** Learning English (Aprendendo Inglês)  
  **Autor:** Thiago Vitor Porto Santiago  
@@ -21,6 +22,7 @@
 > aplicativo na sala de aula como uma forma de acompanhamento que utiliza vídeo, exercícios e um
 > breve resumo do tema a ser discutido em aula. Ajudando o professor a tornar o aluno mais
 > interessado no assunto ensinado em aula.  
+
 
 ## Telas da Aplicação  
 [Tela Inicial](https://drive.google.com/file/d/178FIpX3JmY_Y7HyZPud8KYnsVsXJJcky/view?usp=sharing)  
