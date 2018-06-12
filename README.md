@@ -1,8 +1,8 @@
 # LearningEnglish
 
-### Universidade Estadual da Paraíba  
-### Centro de Ciências e Tecnologia – CCT  
-### Departamento de computação  
+ Universidade Estadual da Paraíba  
+ Centro de Ciências e Tecnologia – CCT  
+ Departamento de computação  
 
 
 # **Ficha Técnica – Objeto de Aprendizagem**
